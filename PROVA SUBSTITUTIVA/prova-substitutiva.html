@@ -157,7 +157,7 @@
             return false;
          }
          // c) A idade, que precisa ser numérica, deve estar entre 0 (inclusive) e 120 (inclusive).
-         if (idade < 0 && idade > 120) {
+         if (isNaN(idade) || idade < 0 && idade > 120) {
             alert('Idade inválida');
             elemIdade.focus();
             return false;
